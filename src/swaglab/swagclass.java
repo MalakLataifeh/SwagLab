@@ -16,21 +16,21 @@ public class swagclass {
 		// TODO Auto-generated method stub
 		
 	  //WebDriverManager.chromedriver().setup();
-      WebDriver driver = new EdgeDriver();
+      WebDriver driver = new ChromeDriver();
       driver.get("https://www.google.com");
-//      driver.get("https://www.saucedemo.com/");
-//      driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys("standard_user");
-//      driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
-//      driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
-//      driver.manage().window().maximize();
-//      List<WebElement> the_add_buttons = driver.findElements(By.className("btn")); 
-//      // i can use btn_primary or btn_small or btn_inventory instead of btn
-//      System.out.println(the_add_buttons.size());
-//      
-//      for(int i=0;i<the_add_buttons.size();i++) {
-//    	  
-//    	  the_add_buttons.get(i).click(); 
-//      }
+     driver.get("https://www.saucedemo.com/");
+     driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys("standard_user");
+     driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
+     driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
+     driver.manage().window().maximize();
+     List<WebElement> the_add_buttons = driver.findElements(By.className("btn")); 
+     // i can use btn_primary or btn_small or btn_inventory instead of btn
+     System.out.println(the_add_buttons.size());
+     
+     for(int i=0;i<the_add_buttons.size();i++) {
+   	  
+   	  the_add_buttons.get(i).click(); 
+     }
 	}
 
 }
